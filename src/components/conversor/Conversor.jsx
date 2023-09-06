@@ -17,14 +17,10 @@ const Conversor = () => {
           <input
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mx-2"
             type="number"
-            id="cantidad_1"
             placeholder="0"
           />
-          <select
-            id="primer_moneda"
-            className="bg-gray-50 border rounded-md border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-          >
-            <option value="ARS" selected>
+          <select className="bg-gray-50 border rounded-md border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+            <option selected value="ARS">
               ARS
             </option>
             <option value="USD">USD</option>
@@ -33,34 +29,22 @@ const Conversor = () => {
         </div>
 
         <div className="flex flex-row justify-center items-center m-3">
-          <div
-            id="cambio"
-            className="flex min-w-[8rem] text-red-600 font-bold text-lg"
-          >
+          <div className="flex min-w-[8rem] text-red-600 font-bold text-lg">
             <span>$</span>
             <p>365.00</p>
           </div>
-          <button
-            id="cambio_valor"
-            className="text-xl border-none bg-transparent"
-          >
-            ⬆️⬇️
-          </button>
+          <button className="text-xl border-none bg-transparent">⬆️⬇️</button>
         </div>
 
         <div className="flex">
           <input
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mx-2"
             type="number"
-            id="cantidad_2"
             placeholder="0"
           />
-          <select
-            className="bg-gray-50 border border-gray-300 text-gray-900 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-            id="segunda_moneda"
-          >
+          <select className="bg-gray-50 border border-gray-300 text-gray-900 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
             <option value="ARS">ARS</option>
-            <option value="USD" selected>
+            <option selected value="USD">
               USD
             </option>
             <option value="EUR">EUR</option>
