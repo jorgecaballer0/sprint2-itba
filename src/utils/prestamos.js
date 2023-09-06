@@ -1,9 +1,9 @@
-export function calcularTotal(cantidad, plazo) {
-  const cantidadInt = parseInt(cantidad);
-  const plazoInt = parseInt(plazo);
+// export function calcularTotal(cantidad, plazo) {
+//   const cantidadInt = parseInt(cantidad);
+//   const plazoInt = parseInt(plazo);
 
-  let totalCantidad;
+//   let totalCantidad;
 
-  if ()
-  console.log(" hola ");
-}
+//   if ()
+//   console.log(" hola ");
+// }

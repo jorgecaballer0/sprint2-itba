@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { calcularTotal } from "../../utils/prestamos";
+// import { calcularTotal } from "../../utils/prestamos";
 
 const FormPrestamos = ({ cantidad, setCantidad, plazo, setPlazo }) => {
   const [error, setError] = useState(false);
@@ -11,7 +11,7 @@ const FormPrestamos = ({ cantidad, setCantidad, plazo, setPlazo }) => {
     }
     setError(false);
 
-    calcularTotal(cantidad, plazo);
+    // calcularTotal(cantidad, plazo);
   };
 
   return (
