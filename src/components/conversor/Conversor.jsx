@@ -5,10 +5,10 @@ const Conversor = () => {
     <>
       <section className="flex flex-col place-items-center">
         <div>
-          <h1 className="flex justify-center m-8 text-4xl">
+          <h1 className="flex justify-center my-6 text-4xl">
             Conversor de moneda
           </h1>
-          <h3 className="flex justify-center m-8 text-2xl">
+          <h3 className="flex justify-center my-6 text-2xl">
             Elegí la moneda e ingresá la cantidad
           </h3>
         </div>
