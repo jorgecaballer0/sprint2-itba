@@ -3,15 +3,27 @@ import React from "react";
 const Conversor = () => {
   return (
     <>
-      <section className="conversor">
+      <section className="flex flex-col place-items-center">
         <div>
-          <h1 className="title-seccion">Conversor de moneda</h1>
-          <h3 className="subtitle">Elegí la moneda e ingresá la cantidad</h3>
+          <h1 className="flex justify-center m-8 text-4xl">
+            Conversor de moneda
+          </h1>
+          <h3 className="flex justify-center m-8 text-2xl">
+            Elegí la moneda e ingresá la cantidad
+          </h3>
         </div>
-        
-        <div>
-          <input type="number" id="cantidad_1" placeholder="0" />
-          <select id="primer_moneda">
+
+        <div className="flex">
+          <input
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mx-2"
+            type="number"
+            id="cantidad_1"
+            placeholder="0"
+          />
+          <select
+            id="primer_moneda"
+            className="bg-gray-50 border rounded-md border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+          >
             <option value="ARS" selected>
               ARS
             </option>
@@ -20,14 +32,33 @@ const Conversor = () => {
           </select>
         </div>
 
-        <div className="valor-moneda">
-          <div id="cambio" className="valor-actual"></div>
-          <button id="cambio_valor">⬆️⬇️</button>
+        <div className="flex flex-row justify-center items-center m-3">
+          <div
+            id="cambio"
+            className="flex min-w-[8rem] text-red-600 font-bold text-lg"
+          >
+            <span>$</span>
+            <p>365.00</p>
+          </div>
+          <button
+            id="cambio_valor"
+            className="text-xl border-none bg-transparent"
+          >
+            ⬆️⬇️
+          </button>
         </div>
-        
-        <div>
-          <input type="number" id="cantidad_2" placeholder="0" />
-          <select id="segunda_moneda">
+
+        <div className="flex">
+          <input
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mx-2"
+            type="number"
+            id="cantidad_2"
+            placeholder="0"
+          />
+          <select
+            className="bg-gray-50 border border-gray-300 text-gray-900 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            id="segunda_moneda"
+          >
             <option value="ARS">ARS</option>
             <option value="USD" selected>
               USD

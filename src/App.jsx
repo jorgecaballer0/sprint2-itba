@@ -4,11 +4,11 @@ import Prestamos from "./components/prestamos/Prestamos";
 
 function App() {
   return (
-    <>
-      <Prestamos />
-      <hr />
+    <div className="flex flex-col gap-2">
       <Conversor />
-    </>
+      <hr />
+      <Prestamos />
+    </div>
   );
 }
 
