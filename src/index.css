@@ -13,5 +13,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+/* Imagen inicio de sesion */
+.imagenInicio{
+  min-width: 45%;
+  background-image: url(./assets/images/mejor_registro.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #427cae;
 }
