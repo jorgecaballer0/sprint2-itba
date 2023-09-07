@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { calcularTotal } from "../../utils/prestamos";
 
-const FormPrestamos = ({ cantidad, setCantidad, plazo, setPlazo }) => {
+const FormPrestamos = ( cantidad, setCantidad, plazo, setPlazo ) => {
   const [error, setError] = useState(false);
 
   const calcularPrestamo = (e) => {
@@ -16,6 +16,8 @@ const FormPrestamos = ({ cantidad, setCantidad, plazo, setPlazo }) => {
 
   return (
     <>
+      {cantidad}
+      {plazo}
       <form onSubmit={calcularPrestamo}>
         <div className="mb-6">
           <label className="block mb-2 text-sm font-medium text-gray-900">
