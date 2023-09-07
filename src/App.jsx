@@ -1,19 +1,21 @@
 import React from "react";
 import Conversor from "./components/conversor/Conversor";
 import Prestamos from "./components/prestamos/Prestamos";
-import Registro from "./components/inicio/Registro";
-import Inicio from "./components/inicio/Inicio_sesion";
+import Header from "./components/header/Header";
+import Inicio from "./components/inicio/Inicio";
+import Footer from "./components/footer/Footer";
+// import Sidebar from "./components/sideBar/Sidebar";
 
 function App() {
   return (
     <>
-      <Inicio />
-      <hr className="m-2" />
-      <Registro />
-      <hr className="m-2" />
+      <Header/>
+      {/* <Sidebar/> */}
+      <Inicio/>
       <Conversor />
-      <hr className="m-2" />
+      <hr className="mt-2" />
       <Prestamos />
+      <Footer/>
     </>
   );
 }
