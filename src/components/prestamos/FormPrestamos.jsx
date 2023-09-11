@@ -43,14 +43,12 @@ const FormPrestamos = (cantidad, setCantidad, plazo, setPlazo) => {
               Indicar el número de cuotas
             </label>
             <select
+              defaultValue="Seleccionar cuotas"
               name="cuotasPrestamo"
               className="bg-gray-50 border rounded-md border-gray-300 text-gray-900 text-sm block w-full p-2.5"
               required
               onChange={(e) => setPlazo(e.target.value)}
             >
-              <option selected disabled>
-                Seleccionar cuotas
-              </option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>

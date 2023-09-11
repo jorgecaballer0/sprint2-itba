@@ -9,13 +9,12 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <Header/>
+      <Header />
       {/* <Sidebar/> */}
-      <Inicio/>
+      <Inicio />
       <Conversor />
-      <hr className="mt-2" />
       <Prestamos />
-      <Footer/>
+      <Footer />
     </>
   );
 }
