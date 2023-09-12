@@ -36,7 +36,6 @@ const Conversor = () => {
   return (
     <>
       <section className="flex flex-col items-center h-screen">
-        <div className="bg-red-500 h-14 w-14 md:bg-blue-500 sm:bg-green-500"></div>
         <div>
           <h1 className="flex justify-center my-6 text-4xl text-center">
             Conversor de moneda
@@ -98,15 +97,15 @@ const Conversor = () => {
           </div>
         </form>
         {montoIngresado === undefined ? (
-          <p className="font-semibold text-md my-2">
+          <p className="font-semibold text-md my-2 text-center">
             Ingrese un valor para realizar la conversión
           </p>
         ) : (
-          <div className="flex font-semibold m-2">
+          <div className="flex font-semibold m-2 sm:flex-col sm:items-center">
             <span className=" text-red-600 mx-1">
               {montoIngresado} {valorMoneda1}
             </span>
-            <div className="flex gap-1">
+            <div className="flex gap-1 sm:flex-col">
               <p>es equivalente a:</p>
               <span className="text-green-600">
                 {(valorCambio * montoIngresado).toFixed(2)} {valorMoneda2}
