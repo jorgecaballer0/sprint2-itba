@@ -3,6 +3,8 @@ import Banner from "../../assets/images/banner.png"
 import BannerA from "../../assets/images/bannerA.png"
 import BannerB from "../../assets/images/bannerB.png"
 
+import { Link } from "react-router-dom";
+
 const Inicio = () =>{
     return(
         <>
@@ -12,7 +14,9 @@ const Inicio = () =>{
         <h5 className="font-bold ml-2">Cuentas</h5>
         <p className="text-orange-100 ml-3">Caja de Ahorro $</p>
         <p className="text-orange-100 ml-5">$ 1000.00</p>
-        <button className="text-orange-900 text-center ml-40 ">Ver Todo</button>
+        <button className="text-orange-900 text-center ml-40 ">
+         <Link to={"/cuenta"}>Ver Todo</Link> 
+          </button>
       </div>
 
       <div className="bg-orange-400 w-80 m-10 rounded-lg text-xl text-orange-900">

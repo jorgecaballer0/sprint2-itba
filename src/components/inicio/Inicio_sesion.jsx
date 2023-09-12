@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../../assets/images/logo.png";
-// import Google from "../../assets/images/google.png";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
-const Inicio = () => {
+const InicioSesion = () => {
   return (
     <>
       <section className="flex h-screen">
@@ -71,7 +71,7 @@ const Inicio = () => {
             <div className="mt-4 flex justify-center">
               <p className="text-sm text-gray-700">
                 ¿No tienes una cuenta?{" "}
-                <span className="text-blue-800">Registrate</span>
+                <Link to={'/registro'} className="text-blue-800">Registrate</Link>
               </p>
             </div>
           </form>
@@ -82,4 +82,4 @@ const Inicio = () => {
   );
 };
 
-export default Inicio;
+export default InicioSesion;

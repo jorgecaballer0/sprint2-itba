@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/images/logo.png";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const Registro = () => {
   return (
@@ -82,7 +83,7 @@ const Registro = () => {
             <div className="mt-4 flex justify-center">
               <p className="text-sm text-gray-700">
                 ¿Ya tienes una cuenta?{" "}
-                <span className="text-blue-800">Iniciar sesión</span>
+                <Link to={'/'} className="text-blue-800">Iniciar sesión</Link>
               </p>
             </div>
           </form>

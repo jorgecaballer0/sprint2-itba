@@ -1,5 +1,5 @@
 import React from "react";
-
+import {FaFacebookSquare, FaInstagram, FaWhatsappSquare} from "react-icons/fa"
 
 
 
@@ -14,10 +14,19 @@ const Footer = () =>{
                 <li><a href="#">|| Políticas de privacidad</a></li>
                 <li><a href="#">|| Contacto</a></li>
             </ul>
-        <div className="text-orange-800 text-xl w-screen text-center  ">
-            <button className="m-2">Facebook</button>
-            <button className="m-2"> Instagram</button>
-            <button className="m-2"> Whatsapp</button>
+        <div className="text-orange-800 w-screen text-center ">
+            <button className="m-2 text-3xl">
+                <FaFacebookSquare>
+                </FaFacebookSquare>
+            </button>
+            <button className="m-2 text-3xl">
+                 <FaInstagram>
+                 </FaInstagram>
+            </button>
+            <button className="m-2 text-3xl">
+                <FaWhatsappSquare>
+                </FaWhatsappSquare>
+            </button>
 
             
         </div>
