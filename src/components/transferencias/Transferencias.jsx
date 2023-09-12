@@ -5,7 +5,7 @@ const Transferencias = () => {
     <>
         <h1 className="flex justify-center my-6 text-4xl">Transferencias</h1>
       <section className="relative overflow-x-auto border rounded-md mt-4 mx-auto w-4/5">
-        <table className="w-full text-sm text-left text-gray-500">
+        <table className="w-full text-sm text-left text-gray-500 ">
           {/* Titulos */}
           <thead className="text-xs text-gray-700 uppercase">
             <tr>

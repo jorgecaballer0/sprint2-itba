@@ -1,0 +1,58 @@
+[
+    {
+        "usuario": "userC1@itbank.com",
+        "password": "1234",
+        "nombre": "Usuario Cualquiera 1",
+        "tipo de cuenta": "Caja de Ahorro en Pesos",
+        "saldo": "$10000000",
+        "cbu": "3215486456",
+        "alias": "APROBAR.LENGUAJE.NUEVO",
+        "datos de la tarjeta": {
+            "tipo de tarjeta": "Débito",
+            "titular": "U. Cualquiera 1",
+            "numero de tarjeta": "325 215 489 758",
+            "vencimiento": "05/30",
+            "codigo de seguridad": "875"
+        }
+    }, 
+    {
+        "usuario": "userD2@itbank.com",
+        "password": "1234",
+        "nombre": "Usuario Distinto 2",
+        "tipo de cuenta": "Cuenta Corriente en Pesos",
+        "saldo": "$50000",
+        "cbu": "852147963",
+        "alias": "VERDE.CODIGO.BARCO",
+        "datos de la tarjeta": {
+            "tipo de tarjeta": "Débito",
+            "titular": "U. DISTINTO 2",
+            "numero de tarjeta": "325 852 963 753",
+            "vencimiento": "03/30",
+            "codigo de seguridad": "951"
+        }
+    },
+    {
+        "usuario": "userR3@itbank.com",
+        "password": "1234",
+        "nombre": "Usuario Random 3",
+        "tipo de cuenta": "Caja de Ahorro en Pesos",
+        "saldo": "$508000",
+        "cbu": "989746531",
+        "alias": "MATE.COCIDO.PAN",
+        "datos de la tarjeta": {
+            "tipo de tarjeta": "Débito",
+            "titular": "USUARIO R. 3",
+            "numero de tarjeta": "325 837 167 975",
+            "vencimiento": "01/30",
+            "codigo de seguridad": "101"
+        },
+        "tarjeta 2": {
+            "tipo de tarjeta": "Crédito",
+            "titular": "USUARIO RANDOM 3",
+            "numero de tarjeta": "325 852 963 753",
+            "vencimiento": "03/31",
+            "codigo de seguridad": "025"
+        }
+    }
+]
+   
