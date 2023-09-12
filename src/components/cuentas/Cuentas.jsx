@@ -4,7 +4,7 @@ import data from "../../utils/datos.json";
 const Cuentas = () => {
   return (
     <>
-      <div className="flex justify-center items-center gap-6">
+      <div className="flex justify-center items-center gap-6 sm:flex-col">
         <div className="flex justify-center">
           <div className="bg-orange-400 w-96 m-5 rounded-lg text-xl text-orange-900 ">
             <h5 className="font-bold ml-3 mt-2">Cuenta</h5>
