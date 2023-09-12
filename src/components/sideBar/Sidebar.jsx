@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="py-3 fixed top-0 left-0 right-0 text-blue-900">
+    <div className="py-3 fixed top-0 left-0 right-0 text-blue-900 z-10">
       <button className="ml-8 mt-3" onClick={() => setOpen(true)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -47,23 +47,32 @@ const SideBar = () => {
               />
             </svg>
           </button>
-          <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
-            <Link to={"./inicio"}>Inicio</Link>
-          </div>
-          <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
-            <Link to={"./cuenta"}>Cuenta</Link>
-          </div>
-          <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
-            <Link to={"./pago"}>Pagos</Link>
-          </div>
-          <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
-            <Link to={"./transferencia"}>Transferencias</Link>
-          </div>
-          <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
-            <Link to={"./prestamos"}>Préstamos</Link>
-          </div>
-          <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
-            <Link to={"./conversor"}>Conversor de Moneda</Link>
+          <div>
+            <div>
+              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+                <Link to={"./inicio"}>Inicio</Link>
+              </div>
+              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+                <Link to={"./cuenta"}>Cuenta</Link>
+              </div>
+              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+                <Link to={"./pago"}>Pagos</Link>
+              </div>
+              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+                <Link to={"./transferencia"}>Transferencias</Link>
+              </div>
+              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+                <Link to={"./prestamos"}>Préstamos</Link>
+              </div>
+              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+                <Link to={"./conversor"}>Conversor de Moneda</Link>
+              </div>
+            </div>
+            <div className="mt-60">
+              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+                <Link to={"./conversor"}>Cerrar sesion</Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>

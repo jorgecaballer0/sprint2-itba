@@ -31,6 +31,7 @@ const InicioSesion = () => {
                 id="emailLogin"
                 type="email"
                 placeholder="Email"
+                required
               />
             </div>
 
@@ -46,26 +47,27 @@ const InicioSesion = () => {
                 id="passwordLogin"
                 type="password"
                 placeholder="Contraseña"
+                required
               />
             </div>
 
-            <button
-              className="w-full bg-blue-800 hover:bg-blue-700 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline"
-              type="button"
-            >
-              Iniciar sesión
-            </button>
+            <Link to={"/inicio"}>
+              <button
+                className="w-full bg-blue-800 hover:bg-blue-700 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Iniciar sesión
+              </button>
+            </Link>
 
             <button
               className="w-full flex justify-center items-center gap-2 bg-black hover:bg-zinc-900 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Iniciar sesión con
-              {/* Opcion de Google con icono */}
               <span className="text-2xl">
                 <FcGoogle />
               </span>
-              {/* <img src={Google} alt="Google" className="h-6" /> */}
             </button>
 
             <div className="mt-4 flex justify-center">
