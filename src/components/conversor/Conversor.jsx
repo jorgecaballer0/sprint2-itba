@@ -35,9 +35,8 @@ const Conversor = () => {
 
   return (
     <>
-      <section className="flex flex-col justify-center items-center min-h-[calc(100vh-290px)]">
-        <div className="bg-red-500 h-14 w-14 md:bg-blue-500 sm:bg-green-500">
-        </div>
+      <section className="flex flex-col items-center h-screen">
+        <div className="bg-red-500 h-14 w-14 md:bg-blue-500 sm:bg-green-500"></div>
         <div>
           <h1 className="flex justify-center my-6 text-4xl text-center">
             Conversor de moneda
