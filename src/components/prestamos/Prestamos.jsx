@@ -9,7 +9,7 @@ const Prestamos = () => {
 
   return (
     <>
-      <section className="h-screen">
+      <section className="h-screen flex flex-col items-center">
         <h1 className="flex justify-center my-6 text-4xl text-center">
           Simulador de préstamos
         </h1>
