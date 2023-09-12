@@ -7,7 +7,7 @@ const InicioSesion = () => {
   return (
     <>
       <section className="flex h-screen">
-        <div className="w-[55%] flex flex-col justify-center">
+        <div className="w-[55%] flex flex-col justify-center items-center sm:w-screen">
           <div className="flex flex-col items-center">
             <img
               src={Logo}
@@ -18,7 +18,7 @@ const InicioSesion = () => {
               INICIAR SESIÓN
             </h2>
           </div>
-          <form className="flex flex-col items-center bg-white shadow-md rounded p-8 mx-auto">
+          <form className="flex flex-col items-center bg-white shadow-md rounded p-8 mx-auto sm:w-[95%]">
             <div className="mb-4 flex flex-col w-full">
               <label
                 className="flex text-gray-400 text-sm font-bold mb-2"
@@ -53,22 +53,24 @@ const InicioSesion = () => {
 
             <Link to={"/inicio"}>
               <button
-                className="w-full bg-blue-800 hover:bg-blue-700 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline"
+                className="w-72 flex justify-center bg-blue-800 hover:bg-blue-700 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline"
                 type="button"
               >
                 Iniciar sesión
               </button>
             </Link>
 
-            <button
-              className="w-full flex justify-center items-center gap-2 bg-black hover:bg-zinc-900 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline"
-              type="button"
-            >
-              Iniciar sesión con
-              <span className="text-2xl">
-                <FcGoogle />
-              </span>
-            </button>
+            <Link to={"https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dchrome-profile-chooser%26pli%3D1&ec=GAlAwAE&hl=es_419&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1056708794%3A1694488282615385&theme=glif"}>
+              <button
+                className="w-full flex justify-center items-center gap-2 bg-black hover:bg-zinc-900 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline sm:w-72 sm:gap-1"
+                type="button"
+              >
+                Iniciar sesión con
+                <span className="text-2xl">
+                  <FcGoogle />
+                </span>
+              </button>
+            </Link>
 
             <div className="mt-4 flex justify-center">
               <p className="text-sm text-gray-700">
@@ -80,7 +82,7 @@ const InicioSesion = () => {
             </div>
           </form>
         </div>
-        <div className="w-[45%] imagenInicio"></div>
+        <div className=" md:w-[45%] sm:hidden imagenInicio "></div>
       </section>
     </>
   );

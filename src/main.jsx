@@ -13,11 +13,12 @@ import Transferencias from "./components/transferencias/Transferencias";
 import Prestamos from "./components/prestamos/Prestamos";
 import Conversor from "./components/conversor/Conversor";
 import InicioSesion from "./components/inicio/Inicio_sesion";
-import Registro from "./components/inicio/Registro";
+import Registro from "./components/inicio/registro";
+
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/inicio_sesion",
     element: <InicioSesion />,
   },
   {
