@@ -71,7 +71,9 @@ const InicioSesion = () => {
             <div className="mt-4 flex justify-center">
               <p className="text-sm text-gray-700">
                 ¿No tienes una cuenta?{" "}
-                <Link to={'/registro'} className="text-blue-800">Registrate</Link>
+                <Link to={"/registro"} className="text-blue-800">
+                  Registrate
+                </Link>
               </p>
             </div>
           </form>

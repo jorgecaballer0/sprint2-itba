@@ -83,7 +83,9 @@ const Registro = () => {
             <div className="mt-4 flex justify-center">
               <p className="text-sm text-gray-700">
                 ¿Ya tienes una cuenta?{" "}
-                <Link to={'/'} className="text-blue-800">Iniciar sesión</Link>
+                <Link to={"/"} className="text-blue-800">
+                  Iniciar sesión
+                </Link>
               </p>
             </div>
           </form>

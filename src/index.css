@@ -16,7 +16,7 @@ body {
 }
 
 /* Imagen inicio de sesion */
-.imagenInicio{
+.imagenInicio {
   min-width: 45%;
   background-image: url(./assets/images/mejor_registro.png);
   background-position: center;
