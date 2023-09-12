@@ -64,7 +64,7 @@ const Registro = () => {
               />
             </div>
 
-            <Link to={"/inicio_sesion"}>
+            <Link to={"/"}>
               <button
                 className="w-72 flex justify-center bg-blue-800 hover:bg-blue-700 text-white font-bold mt-4 py-2 px-16 rounded focus:outline-none focus:shadow-outline"
                 type="button"
@@ -88,7 +88,7 @@ const Registro = () => {
             <div className="mt-4 flex justify-center">
               <p className="text-sm text-gray-700">
                 ¿Ya tienes una cuenta?{" "}
-                <Link to={"/inicio_sesion"} className="text-blue-800">
+                <Link to={"/"} className="text-blue-800">
                   Iniciar sesión
                 </Link>
               </p>

@@ -18,7 +18,7 @@ import Registro from "./components/inicio/registro";
 
 const router = createBrowserRouter([
   {
-    path: "/inicio_sesion",
+    path: "/",
     element: <InicioSesion />,
   },
   {
