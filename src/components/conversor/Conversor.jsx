@@ -35,12 +35,14 @@ const Conversor = () => {
 
   return (
     <>
-      <section className="flex flex-col justify-center items-center">
+      <section className="flex flex-col justify-center items-center min-h-[calc(100vh-290px)]">
+        <div className="bg-red-500 h-14 w-14 md:bg-blue-500 sm:bg-green-500">
+        </div>
         <div>
-          <h1 className="flex justify-center my-6 text-4xl">
+          <h1 className="flex justify-center my-6 text-4xl text-center">
             Conversor de moneda
           </h1>
-          <h3 className="flex justify-center my-6 text-2xl">
+          <h3 className="flex justify-center my-6 text-2xl text-center">
             Elegí la moneda e ingresá la cantidad a convertir
           </h3>
         </div>

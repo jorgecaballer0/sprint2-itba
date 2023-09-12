@@ -49,28 +49,28 @@ const SideBar = () => {
           </button>
           <div>
             <div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
                 <Link to={"./inicio"}>Inicio</Link>
               </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
                 <Link to={"./cuenta"}>Cuenta</Link>
               </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
                 <Link to={"./pago"}>Pagos</Link>
               </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
                 <Link to={"./transferencia"}>Transferencias</Link>
               </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
                 <Link to={"./prestamos"}>Préstamos</Link>
               </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
+              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
                 <Link to={"./conversor"}>Conversor de Moneda</Link>
               </div>
             </div>
-            <div className="mt-60">
-              <div className="text-center text-white text-xl hover:bg-orange-400 cursor-pointer py-3 mb-2">
-                <Link to={"./conversor"}>Cerrar sesion</Link>
+            <div className="mt-96">
+              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                <Link to={"./"}>Cerrar sesion</Link>
               </div>
             </div>
           </div>

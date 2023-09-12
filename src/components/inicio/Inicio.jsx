@@ -2,13 +2,12 @@ import React from "react";
 import Banner from "../../assets/images/banner.png";
 import BannerA from "../../assets/images/bannerA.png";
 import BannerB from "../../assets/images/bannerB.png";
-
 import { Link } from "react-router-dom";
 
 const Inicio = () => {
   return (
     <>
-      <h1 className="flex justify-center font-bold text-4xl text-blue-600 ">
+      <h1 className="flex justify-center font-bold text-4xl text-blue-600">
         Hola,user!
       </h1>
       <div className="flex justify-center">

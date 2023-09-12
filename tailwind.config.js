@@ -3,14 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      tablet: "640px",
-      // => @media (min-width: 640px) { ... }
+      sm: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
 
-      laptop: "1024px",
+      md: { min: "768px", max: "1023px" },
+      // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+      lg: { min: "1024px" },
       // => @media (min-width: 1024px) { ... }
-
-      desktop: "1280px",
-      // => @media (min-width: 1280px) { ... }
     },
     plugins: [],
   },
