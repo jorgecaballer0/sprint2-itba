@@ -1,67 +1,64 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Root from './routes/root';
+import Root from "./routes/root";
 
-import Error from './routes/error';
-import Inicio from './components/inicio/Inicio'
-import Cuentas from './components/cuentas/Cuentas';
-import Pagos from './components/pagos/Pagos';
-import Transferencias from './components/transferencias/Transferencias';
-import Prestamos from './components/prestamos/Prestamos';
-import Conversor from './components/conversor/Conversor';
-import InicioSesion from './components/inicio/Inicio_sesion';
-import Registro from './components/inicio/Registro'
-
-
+import Error from "./routes/error";
+import Inicio from "./components/inicio/Inicio";
+import Cuentas from "./components/cuentas/Cuentas";
+import Pagos from "./components/pagos/Pagos";
+import Transferencias from "./components/transferencias/Transferencias";
+import Prestamos from "./components/prestamos/Prestamos";
+import Conversor from "./components/conversor/Conversor";
+import InicioSesion from "./components/inicio/Inicio_sesion";
+import Registro from "./components/inicio/Registro";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <InicioSesion/>
+    element: <InicioSesion />,
   },
   {
     path: "registro",
-    element: <Registro/>
+    element: <Registro />,
   },
   {
     path: "/",
-    element: <Root/>,
-    errorElement: <Error/>,
+    element: <Root />,
+    errorElement: <Error />,
     children: [
       {
         path: "inicio",
-        element: <Inicio/>
+        element: <Inicio />,
       },
       {
         path: "cuenta",
-        element: <Cuentas/>
+        element: <Cuentas />,
       },
       {
         path: "pago",
-        element: <Pagos/>
+        element: <Pagos />,
       },
       {
         path: "transferencia",
-        element: <Transferencias/>
+        element: <Transferencias />,
       },
       {
         path: "prestamos",
-        element: <Prestamos/>
+        element: <Prestamos />,
       },
       {
         path: "conversor",
-        element: <Conversor/>
-      }
-
-    ]
+        element: <Conversor />,
+      },
+    ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
