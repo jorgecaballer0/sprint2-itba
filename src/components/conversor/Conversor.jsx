@@ -35,7 +35,7 @@ const Conversor = () => {
 
   return (
     <>
-      <section className="flex flex-col items-center h-screen">
+      <section className="flex flex-col items-center">
         <div>
           <h1 className="flex justify-center my-6 text-4xl text-center">
             Conversor de moneda
