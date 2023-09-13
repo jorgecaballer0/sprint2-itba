@@ -11,11 +11,11 @@ const Inicio = () => {
   return (
     <>
       <section>
-        <h1 className="flex justify-center font-bold text-4xl text-blue-600">
+        <h1 className="flex justify-center font-bold text-4xl text-blue-600 sm:text-2xl mt-6 mb-0">
           Hola,{data[0].nombre}!
         </h1>
-        <div className="flex justify-center">
-          <div className="bg-orange-400 w-80 m-10 rounded-lg text-xl text-orange-900 ">
+        <div className="flex justify-center sm:flex-col items-center mt-0">
+          <div className="bg-orange-400 w-80 m-10 rounded-lg text-xl text-orange-900 sm:mb-4 mt-4 ">
             <h5 className="font-bold ml-2">Cuentas</h5>
             <p className="text-orange-100 ml-3">{data[0].tipo_de_cuenta}</p>
             <p className="text-orange-100 ml-5">{data[0].saldo}</p>
@@ -24,7 +24,7 @@ const Inicio = () => {
             </button>
           </div>
 
-          <div className="bg-orange-400 w-96 m-10 rounded-lg text-xl text-orange-900">
+          <div className="bg-orange-400 w-80 m-10 rounded-lg text-xl text-orange-900 sm:mt-4 mb-4">
             <h5 className="font-bold ml-2">Tarjetas</h5>
             <div>
               <p className="text-orange-100 ml-3">Número de tarjeta</p>
@@ -49,14 +49,14 @@ const Inicio = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
-          <div className="w-80">
+        <div className="flex justify-center mb-20">
+          <div className="w-80 sm:hidden">
             <img src={BannerA} alt="" />
           </div>
-          <div className="w-80 items-center">
+          <div className="w-80 items-center sm:w-[65%] mb-2 mt-0">
             <img src={Banner} alt="" />
           </div>
-          <div className="w-80">
+          <div className="w-80 sm:hidden">
             <img src={BannerB} alt="" />
           </div>
         </div>
