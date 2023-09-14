@@ -10,7 +10,7 @@ const Prestamos = () => {
   return (
     <>
       <section className="flex flex-col items-center">
-        <h1 className="flex justify-center my-6 text-4xl text-center">
+        <h1 className="flex justify-center my-6 text-4xl text-center sm:mt-20">
           Simulador de préstamos
         </h1>
         <FormPrestamos
