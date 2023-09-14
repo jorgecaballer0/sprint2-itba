@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="w-screen fixed bottom-0">
+      <footer className="w-screen fixed bottom-0">
         <div className="bg-gradient-to-t from-orange-400  h-50 w-screen mt-20">
           <div className="w-80 ">
             <ul className="text-orange-800 text-xl ml-10 sm:mb-5 mt-5">
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 };

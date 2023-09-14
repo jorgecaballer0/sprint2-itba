@@ -49,29 +49,43 @@ const SideBar = () => {
           </button>
           <div>
             <div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
-                <Link to={"./inicio"}>Inicio</Link>
-              </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
-                <Link to={"./cuenta"}>Cuenta</Link>
-              </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
-                <Link to={"./pago"}>Pagos</Link>
-              </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
-                <Link to={"./transferencia"}>Transferencias</Link>
-              </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
-                <Link to={"./prestamos"}>Préstamos</Link>
-              </div>
-              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
-                <Link to={"./conversor"}>Conversor de Moneda</Link>
-              </div>
+              <Link to={"./inicio"}>
+                <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                  Inicio
+                </div>
+              </Link>
+              <Link to={"./cuenta"}>
+                <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                  Cuenta
+                </div>
+              </Link>  
+              <Link to={"./pago"}>
+                <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                  Pagos
+                </div>
+              </Link> 
+              <Link to={"./transferencia"}>
+                <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                  Transferencias
+                </div>
+              </Link> 
+              <Link to={"./prestamos"}>
+                <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                  Préstamos
+                </div>
+              </Link> 
+              <Link to={"./conversor"}>
+                <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                  Conversor de moneda
+                </div>
+              </Link> 
             </div>
-            <div className="mt-96">
-              <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
-                <Link to={"./"}>Cerrar sesion</Link>
-              </div>
+            <div className="lg:mt-72 sm:mt-72 md:mt-72">
+              <Link to={"./"}>
+                <div className="text-center text-white text-xl hover:bg-orange-400 transition-colors cursor-pointer py-3 mb-2">
+                  Cerrar sesión
+                </div>
+              </Link> 
             </div>
           </div>
         </div>

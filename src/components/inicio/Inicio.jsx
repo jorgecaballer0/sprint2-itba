@@ -12,7 +12,7 @@ const Inicio = () => {
     <>
       <section>
         <h1 className="flex justify-center font-bold text-4xl text-blue-600 sm:text-2xl mt-6 mb-0">
-          Hola,{data[0].nombre}!
+          Hola, {data[0].nombre}!
         </h1>
         <div className="flex justify-center sm:flex-col items-center gap-8 sm:gap-1 mb-10">
           <div className="bg-orange-400 w-80 rounded-md text-xl text-orange-900 my-4 min-h-[8rem]">
